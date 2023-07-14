@@ -16,7 +16,7 @@ export const ProductsSection: FC<Props> = ({ title, data }) => {
 
       <div className={styles.Products}>
         {data.map((item, index) => {
-          return <ProductCard key={item} />;
+          return <ProductCard key={item} title={item} price={25000} />;
         })}
       </div>
       <Link href={"#"}>View all</Link>
