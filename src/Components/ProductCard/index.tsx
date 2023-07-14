@@ -4,15 +4,15 @@ import Image from "next/image";
 import Ring5 from "@/Assets/product/ring5.png";
 
 type Props = {
-  id: number;
+  id?: number;
   title: string;
   price: number;
-  description: string;
-  images: string[];
-  discount: number;
-  isNew: boolean;
-  bestSeller: boolean;
-  quantity: number;
+  description?: string;
+  images?: string[];
+  discount?: number;
+  isNew?: boolean;
+  bestSeller?: boolean;
+  quantity?: number;
 };
 
 export const ProductCard: FC<Props> = ({
