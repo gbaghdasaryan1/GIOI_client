@@ -1,0 +1,28 @@
+.Search{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    >input{
+        width: 300px;
+        height: 100%;
+        padding: 0 8px;
+        outline: none;
+        color: #282828;
+        border: 1px solid #282828;
+        border-radius: 0;
+
+        &::placeholder{
+            letter-spacing: 1px;
+        }
+
+        &:active{
+            border: 1px solid #0B666A;
+        }
+
+        &:focus{
+            border: 1px solid #0B666A;
+        }
+    }
+}

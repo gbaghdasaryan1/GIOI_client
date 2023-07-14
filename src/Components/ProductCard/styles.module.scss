@@ -1,0 +1,42 @@
+.ProductCard {
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.ProductCardImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #28282842;
+}
+
+.ProductCardTitle {
+  padding: 4px;
+  color: #282828;
+  font-size: 18px;
+}
+
+.ProductCardPrices {
+  padding: 4px;
+  color: #282828;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  gap: 12px;
+  letter-spacing: 0.5px;
+
+  .LineThrough {
+    text-decoration: line-through;
+    font-style: italic;
+  }
+
+  .Price {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #282828cb;
+    font-weight: 400;
+  }
+
+  .Discoounted {
+  }
+}

@@ -1,0 +1,28 @@
+.Categories {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-top: 30px;
+}
+
+.CategoryItem {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #282828;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 200ms;
+
+  &:hover {
+    background-size: 110%;
+  }
+
+  > p {
+    transition: all 200ms;
+    margin-bottom: 200px;
+  }
+}

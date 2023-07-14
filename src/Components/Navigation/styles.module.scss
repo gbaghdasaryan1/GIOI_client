@@ -1,0 +1,48 @@
+
+.Navigation {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .Dropdown {
+        display: none;
+    }
+
+    >a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 18px;
+        color: #282828;
+        text-decoration: none;
+        transition: 300ms;
+        border-bottom: 1px solid transparent;
+        position: relative;
+
+
+        .ArrowDownIcon {
+            transition: 300ms;
+        }
+
+        &:hover {
+            color: #0B666A;
+            border-bottom: 1px solid #0B666A;
+
+            >.Dropdown {
+                display: flex;
+            }
+
+            .ArrowDownIcon {
+                transform: rotate(180deg);
+
+                >line {
+                    transition: 300ms;
+                    stroke: #0B666A;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+--Home page--
+
+*Topbar +
+
+*Header +
+
+Navigation +
+
+Mobile menu (burger divider)
+
+Search +
+
+Banner +
+
+Categories +
+
+Best sellers +
+
+New products +
+
+Some section like a Art of beauty
+
+Instagram products
+
+*Footer
+
+--Product Details
+
+Product slider
+
+Product info
+
+Similar products
+
+
+--Modals
+
+But now form product card
+
+Order compleate or failed
+
+Fast view image for product card eye icon
+
+--Dropdowns
+
+Navigation item dropdown
+
+Profile icon dropdown
+
+
+--Cart page--
+
+Product list 
+
+Pagination
+
+Filter
+
+--Favorites page--
+
+Product list 
+
+Pagination
+
+Filter
+
+--Log (in/out) page
+
+Auth form
+
+Profile page
+
+
+--About us
+
+--FAQ
+
+--Privacy policy
+
+--Jewellery Care
+
+--Necklace Size Guide,  Ring Size Guide
+
+--Returns
+
+--Gift Cards
+
+--Search page
+
+--Category page

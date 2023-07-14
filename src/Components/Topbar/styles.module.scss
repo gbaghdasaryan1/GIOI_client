@@ -1,0 +1,13 @@
+.Topbar{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #0B666A;
+
+    >h1{
+        color: whitesmoke;
+        letter-spacing: 1px;
+    };
+}
