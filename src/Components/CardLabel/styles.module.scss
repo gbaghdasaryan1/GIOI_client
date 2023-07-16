@@ -1,0 +1,20 @@
+.CardLabel {
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.New {
+  background-color: #0b666a;
+  color: white;
+}
+
+.Discount {
+  background-color: tomato;
+  color: white;
+}

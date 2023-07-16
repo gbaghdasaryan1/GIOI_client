@@ -1,8 +1,15 @@
 .Categories {
+  > h2 {
+    text-align: center;
+    border-bottom: 1px solid #282828;
+  }
+}
+
+.Items {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .CategoryItem {
@@ -14,7 +21,7 @@
   background-repeat: no-repeat;
   background-position: center;
   color: #282828;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.226) 0px 1px 4px;
   transition: all 200ms;
 
   &:hover {

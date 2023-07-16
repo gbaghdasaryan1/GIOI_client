@@ -1,10 +1,10 @@
 .Banner {
-  width: 90%;
-  height: calc(100vh - 170px);
-  margin: 30px auto auto auto;
+  width: 100%;
+  height: calc(100vh - 110px);
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .BannerImg {

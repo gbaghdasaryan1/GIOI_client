@@ -1,15 +1,25 @@
-import { FC, SVGAttributes } from "react"
+import { FC, SVGAttributes } from "react";
 
 type Props = SVGAttributes<SVGElement> & {
-    color?: "#282828"
-}
+  color?: "#282828";
+};
 
-export const SearchIcon: FC<Props> = ({ color = "#282828", className }) => {
-
-    return (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill={'transparent'} className={className} xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#282828" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M18.9999 18.9999L14.6499 14.6499" stroke="#282828" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    )
-}
+export const SearchIcon: FC<Props> = ({
+  color = "#282828",
+  className,
+  ...props
+}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="40"
+      width="40"
+      fill={color}
+      className={className}
+      viewBox="0 -960 960 960"
+      {...props}
+    >
+      <path d="M785.231-154.077 529.154-410.154q-29.696 26.829-69.261 40.914-39.564 14.086-79.585 14.086-95.585 0-161.793-66.028-66.208-66.029-66.208-161.001 0-94.971 66.029-161.125t160.941-66.154q94.911 0 161.509 66.065 66.599 66.066 66.599 160.961 0 41.205-14.769 80.821-14.77 39.615-41.231 69.23l256.308 255.077-22.462 23.231ZM380.077-385.923q82.66 0 139.599-56.731 56.939-56.731 56.939-139.654t-56.939-139.654q-56.939-56.73-139.599-56.73-82.853 0-139.926 56.73-57.074 56.731-57.074 139.654t57.074 139.654q57.073 56.731 139.926 56.731Z" />
+    </svg>
+  );
+};

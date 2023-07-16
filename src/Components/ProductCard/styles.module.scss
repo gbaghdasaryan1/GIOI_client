@@ -1,6 +1,7 @@
 .ProductCard {
-  height: 400px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  // height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.226) 0px 1px 4px;
+  position: relative;
 }
 
 .ProductCardImage {
@@ -8,6 +9,7 @@
   height: 300px;
   object-fit: cover;
   border-bottom: 1px solid #28282842;
+  cursor: pointer;
 }
 
 .ProductCardTitle {
@@ -35,5 +37,36 @@
     font-style: italic;
     color: #282828cb;
     font-weight: 400;
+  }
+}
+
+.CardLabelWrapper {
+  width: 100%;
+  position: absolute;
+  padding: 8px 4px;
+  display: flex;
+  gap: 4px;
+}
+
+.VendorCode {
+  padding: 4px;
+}
+
+.BuyNow {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 8px auto;
+  border: 1px solid #0b666a;
+  background: none;
+  font-size: 18px;
+  transition: 300ms;
+
+  &:hover {
+    background-color: #0b666a;
+    border: 1px solid #115053;
+    color: white;
   }
 }
