@@ -1,13 +1,15 @@
-.Topbar{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background-color: #0B666A;
+.Topbar {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    >h1{
-        color: whitesmoke;
-        letter-spacing: 1px;
-    };
+  background-color: #0b666a;
+
+  > h2 {
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 }

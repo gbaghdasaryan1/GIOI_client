@@ -8,8 +8,8 @@ export const UserIcon: FC<Props> = ({ color = "#282828", className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="50"
-      width="50"
+      height="40"
+      width="40"
       fill={color}
       className={className}
       viewBox="0 -960 960 960"

@@ -1,10 +1,10 @@
-import { FC } from "react"
-import styles from './styles.module.scss';
+import { FC } from "react";
+import styles from "./styles.module.scss";
 
 export const Topbar: FC = () => {
-    return (
-        <div className={styles.Topbar}>
-            <h1>GIOI</h1>
-        </div>
-    )
-}
+  return (
+    <div className={styles.Topbar}>
+      <h2>The art of beauty</h2>
+    </div>
+  );
+};

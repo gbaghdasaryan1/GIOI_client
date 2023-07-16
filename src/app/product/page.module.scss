@@ -1,0 +1,10 @@
+.ProductDetails {
+  min-height: 80vh;
+  display: flex;
+  gap: 12px;
+
+  > div {
+    width: 50%;
+    margin-top: 30px;
+  }
+}

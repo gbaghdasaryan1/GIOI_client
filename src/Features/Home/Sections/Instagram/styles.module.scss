@@ -1,22 +1,40 @@
-.Instagram{
-    margin-top: 30px;
+.Instagram {
+  margin-top: 30px;
 
-    > h2{
-        text-align: center;
+  > h2 {
+    text-align: center;
+  }
+}
+
+.Items {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.Item {
+  height: 300px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  cursor: pointer;
+
+  &:hover {
+    .InstaIcon {
+      path {
+        fill: rgba(235, 231, 30, 0.788);
+      }
     }
+  }
 }
 
-.Items{
-    margin-top: 20px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
+.InstaIcon {
+  margin: 10px;
 
-.Item{
-    height: 300px;
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  path {
+    transition: all 300ms;
+  }
 }
