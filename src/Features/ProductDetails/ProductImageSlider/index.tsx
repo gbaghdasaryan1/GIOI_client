@@ -13,7 +13,7 @@ export const ProductImageSlider: FC = () => {
   const [selected, setSelected] = useState<number>(1);
 
   const handleThumbClick = (item: ThumbType) => {
-    setCurrentImage(thumbsMock[item.id - 1].image);
+    setCurrentImage(thumbsMock[item.id].image);
     setSelected(item.id);
   };
 
