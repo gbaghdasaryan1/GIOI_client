@@ -1,3 +1,35 @@
-.ART{
-    margin-top: 30px;
+.ART {
+  margin-top: 30px;
+
+  > h2 {
+    text-align: center;
+    border-bottom: 1px solid #282828;
+  }
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.ShortImgs {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.LongImg {
+  width: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

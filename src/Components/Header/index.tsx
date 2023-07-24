@@ -20,7 +20,7 @@ export const Header: FC = () => {
   };
 
   const handleScroll = () => {
-    setSticky(window.scrollY > 10);
+    setSticky(window.scrollY > 100);
   };
 
   useLayoutEffect(() => {
