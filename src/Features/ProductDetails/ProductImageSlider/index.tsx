@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC, useCallback, useState } from "react";
 import styles from "./styles.module.scss";
 import cs from "classnames";
 import Image from "next/image";
@@ -9,32 +9,21 @@ import { ArrowLeftIcon } from "@/Assets/icons/ArrowLeftIcon";
 import { ArrowRightIcon } from "@/Assets/icons/ArrowRightIcon";
 
 export const ProductImageSlider: FC = () => {
-  const [currentImage, setCurrentImage] = useState(thumbsMock[0].image);
-  const [selected, setSelected] = useState<number>(1);
+  const [selected, setSelected] = useState<number>(0);
 
-  const handleThumbClick = (item: ThumbType) => {
-    setCurrentImage(thumbsMock[item.id].image);
+  const handleThumbClick = (item: ThumbType, index: number) => {
     setSelected(item.id);
   };
 
   const hadnleNext = () => {
-    if (selected < thumbsMock.length) {
-      setCurrentImage(thumbsMock[selected]?.image);
-      setSelected(() => {
-        return selected + 1;
-      });
-    }
+    if (selected === 4) return;
+    setSelected(selected + 1);
   };
 
   const hadnlePrev = () => {
-    setSelected(() => {
-      return selected - 1;
-    });
-    setCurrentImage(thumbsMock[selected]?.image);
+    if (selected === 0) return;
+    setSelected(selected - 1);
   };
-
-  console.log(currentImage);
-  console.log(selected);
 
   return (
     <div className={styles.ProductImageSlider}>
@@ -43,21 +32,25 @@ export const ProductImageSlider: FC = () => {
           <ArrowLeftIcon className={styles.ArrowLeft} onClick={hadnlePrev} />
           <ArrowRightIcon className={styles.ArrowRight} onClick={hadnleNext} />
         </div>
-        <img src={currentImage} alt="" className={styles.CurrentImage} />
+        <img
+          src={thumbsMock[selected].image}
+          alt=""
+          className={styles.CurrentImage}
+        />
       </div>
 
       <div className={styles.Thumb}>
-        {thumbsMock.map((item) => {
+        {thumbsMock.map((item, index) => {
           return (
             <img
               src={item.image}
               alt=""
               key={item.id}
               className={cs(styles.ThumbItem, {
-                [styles.SelectedThumb]: item.id === selected,
+                [styles.SelectedThumb]: index === selected,
               })}
               onClick={() => {
-                handleThumbClick(item);
+                handleThumbClick(item, index);
               }}
             />
           );
